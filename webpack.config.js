@@ -2,20 +2,9 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: {
-        index: './src/index.js',
-        DOMm: './src/DOMmanipulation.js',
-    },
+    entry:  './src/index.js',
     output: {
-        filename: '[name].main.js',
+        filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-    },
-    module:{
-        rules: [
-            {
-                test: /\.css$/i,
-                use: ['style-loader','css-loader'],
-            }
-        ],
     },
 };

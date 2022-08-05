@@ -1,4 +1,9 @@
 body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
     margin: 0;
     background-color:white;
     display: grid;
@@ -6,6 +11,11 @@ body{
     grid-template-rows: 4rem repeat(2, 20rem);
     justify-content: center;
     
+}
+
+.container img{
+    width: 2rem;
+    height: 2rem;
 }
 
 .titleBar{
