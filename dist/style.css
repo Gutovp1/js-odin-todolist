@@ -1,21 +1,30 @@
 body{
     padding: 0;
     margin: 0;
+    background-color:gainsboro;
 }
 
 .container{
     margin: 0;
-    background-color:white;
     display: grid;
     grid-template-columns: 65rem 20rem;
-    grid-template-rows: 4rem repeat(2, 20rem);
+    grid-template-rows: 4rem 15rem 22rem;
     justify-content: center;
-    
+    gap: 5px;
 }
 
+
 .container img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 5px;
 }
 
 .titleBar{
@@ -32,20 +41,33 @@ body{
     grid-column: 1 / 2;
     grid-row: 2 / 4;
     background-color:orange;
+    padding: 2rem;
+    font-size: 20px;
+}
+
+.taskSection img{
+    float: left;
 }
 
 .upcomingSection{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: goldenrod;
-    padding: 2rem;
 }
 
 .projectSection{
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     background-color: yellow;
+}
+
+.upcomingSection, .projectSection{
     padding: 2rem;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: start; */
 }
 
 .projectSection button{
@@ -56,7 +78,6 @@ body{
     font-size: 20px;
     font-weight: bold;
     padding: 0px 5px;
-    /* padding: 0; */
 }
 
 .projectSection button:hover{
@@ -70,14 +91,4 @@ body{
     border: 2px solid gray;
 }
 
-
-.projectSection span{
-    background-color: #fff;
-    font-size: 20px;
-}
-
-.projectSection span:hover{
-    color: green;
-    background-color: gainsboro;
-}
 
