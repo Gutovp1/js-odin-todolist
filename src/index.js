@@ -1,7 +1,11 @@
 // import './style.css';
-import init from './DOMmanipulation';
-import application from './app.js';
+import init from './interface';
+import application from './app';
+import {newProject} from './interface';
 
-console.log('I am index.js');
+const newTask = document.querySelector('.new-task');
+newTask.addEventListener('click', () => alert('Hi'));
+// console.log('I am index.js');
 // init();
 application();
+// newProject();

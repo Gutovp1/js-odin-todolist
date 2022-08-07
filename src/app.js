@@ -9,9 +9,9 @@ export default function application(arr){
 
 
 // export default function toDos(title, description, date,priority){
-function toDos(title, description, date,priority){
+function toDos( description, date,priority){
     let project;
-    const getTitle = () => title || 'No title';
+    // const getTitle = () => title || 'No title';
     const getDescription = () => description || 'No description';
     const getPriority = () => priority || 'No priority';
     const getDueDate = () =>  date || new Date();
@@ -20,7 +20,7 @@ function toDos(title, description, date,priority){
     const setProject = (nameProj) => project = nameProj;
 
     return{
-        getTitle,
+        // getTitle,
         getDescription,
         getDueDate,
         getPriority,
