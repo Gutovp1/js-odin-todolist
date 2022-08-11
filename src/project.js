@@ -1,10 +1,22 @@
 import application from './app'
 
-function project(name = ''){
-    const getName = () => {return name;}
+function projectObj(name = ''){
+    const getName = () => {return name;};
     const setName = (newName) => {name = newName};
-    let tasks = ['do the math','do the dishes'];
-    return {getName, tasks}
+    let tasks = [];
+    const addTask = (task) => {tasks.push(task)};
+    const removeTask = () => {};
+
+    
+    return {getName, setName, tasks}
 }
 
-export {project};
+function projectsList(){
+    let projects = [];
+    getProjects = function(){ return projects;};
+    setProjects = function(newProjects){ projects = newProjects;};
+    
+}
+
+export {projectObj};
+
