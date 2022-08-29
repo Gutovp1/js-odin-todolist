@@ -1,22 +1,34 @@
-import application from './app'
+import application from "./app";
 
-function projectObj(name = ''){
-    const getName = () => {return name;};
-    const setName = (newName) => {name = newName};
-    let tasks = [];
-    const addTask = (task) => {tasks.push(task)};
-    const removeTask = () => {};
+export default class Project {
+  constructor(title) {
+    this.name = title;
+    this.tasks = [];
+  }
+  getName = () => {
+    return title;
+  };
+  setName = (newTitle) => {
+    title = newTitle;
+  };
+  addTask = (task) => {
+    this.tasks.push(task);
+  };
+  removeTask = () => {
+    this.tasks.pop();
+  };
 
-    
-    return {getName, setName, tasks}
+  // return {getName, setName, tasks, addTask, removeTask}
 }
 
-function projectsList(){
-    let projects = [];
-    getProjects = function(){ return projects;};
-    setProjects = function(newProjects){ projects = newProjects;};
-    
+function projectsList() {
+  let projects = [];
+  getProjects = function () {
+    return projects;
+  };
+  setProjects = function (newProjects) {
+    projects = newProjects;
+  };
 }
 
-export {projectObj};
-
+// export {ProjectObj};
