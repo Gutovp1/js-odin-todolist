@@ -6,6 +6,8 @@ const ulTasks = document.querySelector(".ul-container");
 const projectContainer = document.querySelector(".project-section");
 const btnNewProject = document.querySelector(".new-project");
 const listOfProjects = document.querySelector(".list-projects");
+const projectTitleCurrent = document.querySelector(".project-title-dash");
+const btnNewTask = document.querySelector(".new-task");
 
 let newarr = [];
 
@@ -75,8 +77,10 @@ function createFormProject() {
 
   btnAddProject.addEventListener("click", (e) => {
     e.preventDefault();
-    let prima = projectObj(projectName.value);
-    taskContainer.appendChild(projectName);
+    let prima = new Project(projectName.value);
+    projectTitleCurrent.textContent = projectName.value;
+    taskContainer.insertBefore(projectTitleCurrent, btnNewTask);
+    // taskContainer.appendChild(projectTitleCurrent);
     console.log(prima.getName());
     formProject.remove();
     btnNewProject.classList.toggle("hidden");

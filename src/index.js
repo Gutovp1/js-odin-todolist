@@ -1,7 +1,5 @@
-import init from './interface';
-import {projectObj} from './project';
-import {taskObj} from './task';
+import init from "./interface";
+import Project from "./project";
+import Task from "./task";
 
 // init();
-// newProject();
-

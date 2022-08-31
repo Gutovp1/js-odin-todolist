@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Todo List</title>
 </head>
 <body>
-    <div class="container">
-        <div class="title-bar">JUST GET THINGS DONE</div>
+    <header class="title-bar">JUST GET THINGS DONE</header>
+    <main class="container">
         <div class="task-section">
-            <div class="task-title-container">
-                <div class="project-title"> <b> Current Project </b></div>
+                <div class="project-title-dash"> <b>  </b></div>
                 <a class="new-task" href="#"> <img src="./img/plus-thick.svg" >New task</a>
                 <form action="#" class="form-task hidden">
                     <input type="text" autofocus name="titleTask" id="titleTask" placeholder="title">
@@ -22,7 +22,6 @@
                     <button class="btn-cancel-task">Cancel</button>
                 </form>
                 <ul class="ul-container"></ul>
-            </div>
             <!-- <div class="project-container">
                 <div> <b> Other Project </b></div>
                 <a href="#"   > <img src="./img/plus-thick.svg" >New task</a>
@@ -43,7 +42,9 @@
         </div>
         <div class="project-section"><b>PROJECTS</b>
             <div class="new-project">
-                <a href="#"> <img src="./img/plus-box-multiple.svg" >New Project</a>
+                <!-- <a href="#"> <img src="./img/plus-box-multiple.svg" >New Project</a> -->
+                <button>New Project</button>
+                <i>"./img/plus-box-multiple.svg" </i>
             </div>
             <div class="list-projects">
                 <div class="project-side-bar">
@@ -52,7 +53,9 @@
                 </div>    
             </div>  
         </div>
-    </div>
+    </main>
     <script src="./main.js"></script>
+    <footer></footer>
+    <!-- hidden forms -->
 </body>
 </html>

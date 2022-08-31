@@ -1,15 +1,13 @@
-import application from "./app";
-
 export default class Project {
   constructor(title) {
     this.name = title;
     this.tasks = [];
   }
   getName = () => {
-    return title;
+    return this.title;
   };
   setName = (newTitle) => {
-    title = newTitle;
+    this.title = newTitle;
   };
   addTask = (task) => {
     this.tasks.push(task);
@@ -17,18 +15,4 @@ export default class Project {
   removeTask = () => {
     this.tasks.pop();
   };
-
-  // return {getName, setName, tasks, addTask, removeTask}
 }
-
-function projectsList() {
-  let projects = [];
-  getProjects = function () {
-    return projects;
-  };
-  setProjects = function (newProjects) {
-    projects = newProjects;
-  };
-}
-
-// export {ProjectObj};
